@@ -3,12 +3,15 @@ red = Fore.LIGHTGREEN_EX
 green = Fore.RED
 prime_counter = 0
 print(
-    "The numbers that are in green are the ones that are prime. The ones that are in red are not primes."
+    "The numbers that are in green are the ones that are prime. The ones that are in red are not primes. PLS upvote if you think it is a good program"
 )
+# print(float('inf'))
+# bottem = 0
+# high = float('inf')
 bottem = int(input(Fore.GREEN + "Enter a low number (no negatives pls): "))
 high = int(input(Fore.YELLOW + "Enter a high number: "))
 for num in range(bottem, high):
-    if num  > 0:
+    if num > 1:
         for i in range(2, num):
             if (num % i) == 0:
                 print(green, num, "is not a prime number")
